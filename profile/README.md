@@ -257,8 +257,10 @@ jdbc:postgresql://localhost:5433/nome_seu_banco
 ### Microserviços
 - **Cliente Service:** http://localhost:8080
 - **Trading Service:** http://localhost:8081
+- **Motor Compra Service** http://localhost:8082
 - **Swagger (Cliente):** http://localhost:8080/swagger-ui.html
 - **Swagger (Trading):** http://localhost:8081/swagger-ui.html
+- **Swagger (Motor Compra):** http://localhost:8082/swagger-ui.html
 
 ---
 
