@@ -13,6 +13,7 @@ Este README cobre **apenas a configuração da infraestrutura** (PostgreSQL, Kaf
 - 📦 [Common Library](https://github.com/desafio-itau/itau-common-library) - Biblioteca compartilhada
 - 👥 [Cliente Service](https://github.com/desafio-itau/itau-srv-gerenciamento-clientes) - Microserviço de gestão de clientes
 - 📈 [Trading Service](https://github.com/desafio-itau/itau-srv-trading) - Microserviço de operações de trading
+- ⚙️ [Motor Compra Service](https://github.com/desafio-itau/itau-srv-motor-compra) - Microserviço de operações do motor de compra
 
 ---
 
@@ -37,7 +38,8 @@ desafio-itau/
 │       └── schema.sql
 ├── common-library/          # Biblioteca compartilhada
 ├── cliente-service/         # Microserviço de clientes
-└── trading-service/         # Microserviço de trading
+├── trading-service/         # Microserviço de trading
+└── motor-compra-service     # Microsserviço do motor de compra
 ```
 
 ---
@@ -216,6 +218,19 @@ mvn spring-boot:run
 
 O serviço estará disponível em: `http://localhost:8081`
 
+### 6.3 Motor Compra Service
+
+```bash
+cd desafio-itau
+git clone https://github.com/desafio-itau/itau-srv-motor-compra.git
+cd motor-compra-service
+
+# Rodar o microserviço
+mvn spring-boot:run
+```
+
+O serviço estará disponível em: `http://localhost:8082`
+
 ---
 
 ## 🌐 Acessos
@@ -223,9 +238,9 @@ O serviço estará disponível em: `http://localhost:8081`
 ### PostgreSQL
 - **Host:** `localhost`
 - **Porta:** `5433`
-- **Database:** `clientes_db`
-- **Usuário:** `postgres`
-- **Senha:** `postgres`
+- **Database:** `nome_do_seu_banco`
+- **Usuário:** `usuario_do_seu_banco`
+- **Senha:** `senha_do_seu_banco`
 
 **JDBC URL:**
 ```
